@@ -2,20 +2,21 @@ from pyscript import display, document
 
 def add_brand(e):
     document.getElementById('output1').innerHTML =""
-    students = {'Uniqlo','Bench','Zara'}
+    grade7 = {'Uniqlo','Bench','Zara'}
+    #students = {'Uniqlo','Bench','Zara'}
 
 
-input_brand= document.getElementById('input1').value
+input_student= document.getElementById('input1').value
 
-new_brand_set = {input_brand}
+new_student_set = {input_brand}
 #new_student = LN + "" + FN
 
-all_brands = students | new_brand_set
+all_students = students | new_student_set
 
-total_brands = len( students | new_brand_set)
+total_students = len( students | new_student_set)
 
-brand_list = "<br>".join(sorted(all_brands))
+student_list = "<br>".join(sorted(all_students))
 
 #display
-document.getElementById('output1').innerHTML = f'All brands: <br> {brand_list}'
-display(f'Total brands: {total_brands}', "target='output1" )
+document.getElementById('output1').innerHTML = f'All brands: <br> {student_list}'
+display(f'Total brands: {total_students}', "target='output1" )
