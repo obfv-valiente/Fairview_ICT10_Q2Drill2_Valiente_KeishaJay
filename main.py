@@ -2,7 +2,7 @@ from pyscript import display, document
 
 def add_brand(e):
     document.getElementById('output1').innerHTML =""
-    brands = {'Uniqlo','Bench','Zara'}
+    students = {'Uniqlo','Bench','Zara'}
 
 
 input_brand= document.getElementById('input1').value
@@ -10,9 +10,9 @@ input_brand= document.getElementById('input1').value
 new_brand_set = {input_brand}
 #new_student = LN + "" + FN
 
-all_brands = brands | new_brand_set
+all_brands = students | new_brand_set
 
-total_brands = len( brands | new_brand_set)
+total_brands = len( students | new_brand_set)
 
 brand_list = "<br>".join(sorted(all_brands))
 
