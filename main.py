@@ -8,6 +8,7 @@ def add_brand(e):
 input_brand= document.getElementById('input1').value
 
 new_brand_set = {input_brand}
+#new_student = LN + "" + FN
 
 all_brands = brands | new_brand_set
 
